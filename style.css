@@ -1,0 +1,79 @@
+/*Box sizes include border*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Select All Columns */
+[class*='col-'] {
+  border: 5px solid white;
+  float: left;
+  height: 100px;
+}
+
+/*Standard Widths*/
+.col-1 {width:100%;}
+.col-2 {width:50%;}
+.col-3 {width:33.33%;}
+.col-4 {width:25%;}
+.col-5 {width:20%;}
+
+
+/*Custom widths*/
+.col-10 {width: 10%;}
+.col-20 {width: 20%;}
+.col-40 {width: 40%;}
+.col-30 {width: 30%;}
+.col-60 {width: 60%;}
+.col-70 {width: 70%;}
+.col-80 {width: 80%;}
+.col-90 {width: 90%;}
+
+/*Colors*/
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+/*Media Queries*/
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .black {
+    background-color: orange;
+  }
+
+  .red {
+    background-color: blue;
+  }
+
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .black {
+    background-color: yellow;
+  }
+
+  .red {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 699px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+
+  .black {
+    background-color: blue;
+  }
+
+  .red {
+    background-color: yellow;
+  }
+}
+
